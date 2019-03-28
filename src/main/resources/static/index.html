@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html"><head><script src="js/WeatherController.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title></title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center" >
+
+    <div class="cover-container d-flex h-10 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Parcial 2</h3>
+          <nav class="nav nav-masthead justify-content-center">
+
+          </nav>
+        </div>
+      </header>
+        <main role="main" class="inner cover" id="main">
+            <div class="container -fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="cover-heading">Clima</h1><br/>
+                       <p class="lead"> Escriba la ciudad la cual desea cunsultar el clima.   </p><br/>
+                        <br/><br/><br/><br/>
+
+
+
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="city"  placeholder="Enter city" oninput="setCity(this.value)">
+                    </div>
+
+                    <div class="col-sm-3">
+                        <button  type="button" class="btn btn-primary" id="searchCityBtn" data-toggle="dropdown"  onclick="searchCityWeather()" >
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <br/><br/><br/>     
+                <div class="row">
+                    <div class="col-sm-3" id="itemsColm">
+                        <p class="lead"> Maxima Temperatura</p>
+                    </div>
+                    <div class="col-sm-3" id="quantityColm">
+                        <p class="lead"> Minima Temperatura</p>
+                    </div>
+                    <div class="col-sm-3" id="updatebtn">
+                        <p class="lead"> Clima:</p>
+                    </div>
+
+                </div>
+                <div class="row" id="tableItems">
+                    <div class="col-sm-3" id="maxTemp">
+                        <p class="lead" id="maxTempText"> </p>
+                    </div>
+                    <div class="col-sm-3" id="minTemp">
+                        <p class="lead" id="minTempText"></p>
+                    </div>
+                    <div class="col-sm-3" id="clima">
+                        <p class="lead" id="climaText"></p>
+                    </div>
+
+            </div>
+
+            </div>
+
+
+        </main>
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+    <script src="js/jquery-3.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+
+  
+
+</body></html>
