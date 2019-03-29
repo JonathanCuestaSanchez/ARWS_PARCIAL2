@@ -1,5 +1,7 @@
 # Parcial 2 ARSW-T2
  NOTA ESPERADA 2.5
+ 
+ https://aqueous-beach-47295.herokuapp.com/
 Parcial del segundo tercio
 
 Su compañía lo ha seleccionado para construir una aplicación para consultar el estado del clima en lugares específicos de la tierra.  
