@@ -14,7 +14,7 @@ function searchCityWeather(){
 
  function getCityWeather(callback){
 
-           axios.get( "https://aqueous-beach-47295.herokuapp.com//weather/"+selectedCity)
+           axios.get( "https://aqueous-beach-47295.herokuapp.com/weather/"+selectedCity)
            .then(function (response) {
                 weatherValues=response.data;
 
